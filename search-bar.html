@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+          crossorigin="anonymous">
+    <link href="style/site.css" rel="stylesheet" />
+    <style>
+        
+        .search {
+            position: relative;
+        }
+
+        /* search box */
+        img.logo {
+            position: absolute;
+            top: 0px;
+            margin: -30px;
+            left: 0px;
+            z-index: -1;
+        }
+
+        .searchDiv {
+            background-color: #C40000;
+            padding: 1px;
+            width: 400px;
+            height: 40px;
+            margin: 20px 0px 0px 250px;
+            display: block;
+        }
+
+            .searchDiv input {
+                width: 275px;
+                border: 1px solid transparent;
+                height: 36px;
+                margin: 1px;
+                outline: none;
+            }
+
+            .searchDiv .searchButton {
+                width: 110px;
+                background-color: #C40000;
+                border: 1px solid transparent;
+                font-size: 20px;
+                font-weight: bold;
+                color: white;
+            }
+
+            .searchDiv .searchBelow {
+                margin-top: 3px;
+                margin-left: -20px;
+            }
+
+                .searchDiv .searchBelow a {
+                    padding: 0 20px;
+                    border-right: 1px solid;
+                    font-size: 14px;
+                    position: relative;
+                }
+
+                    .searchDiv .searchBelow a:last-child {
+                        border-right: 0px;
+                    }
+    </style>
+</head>
+<body>
+    <div class="search">
+        <a href="#nowhere">
+            <img class="logo" src="img/site/logo.gif" id="logo" />
+        </a>
+
+        <div class="searchDiv">
+            <input type="text" placeholder="时尚男鞋 太阳镜" name="keyword" />
+            <button class="searchButton" type="submit">搜索</button>
+            <div class="searchBelow">
+                <a href="#nowhere">平衡车</a>
+                <a href="#nowhere">扫地机器人</a>
+                <a href="#nowhere">原汁机</a>
+                <a href="#nowhere">冰箱</a>
+            </div>
+        </div>
+
+        <div style="clear:both"></div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-2.2.4.js"
+            integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+            crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+            integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+            crossorigin="anonymous">
+    </script>
+</body>
+</html>

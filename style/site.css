@@ -1,0 +1,22 @@
+﻿body {
+    font-size: 12px;
+    font-family: Arial;
+}
+
+a {
+    color: #999;
+}
+
+    a:hover {
+        color: #C40000;
+        text-decoration: none;
+    }
+
+.redColor {
+    color: #c40000 !important;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
