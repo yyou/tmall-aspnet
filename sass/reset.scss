@@ -1,18 +1,17 @@
-﻿body {
+body {
     font-size: 12px;
     font-family: Arial;
 }
 
 a {
     color: #999;
+	&:hover {
+		color: #C40000;
+        text-decoration: none;
+	}
 }
 
-    a:hover {
-        color: #C40000;
-        text-decoration: none;
-    }
-
-.redColor {
+.tmall-red {
     color: #c40000 !important;
 }
 

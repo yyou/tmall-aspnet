@@ -1,0 +1,58 @@
+.categoryMenu {
+    position: relative;
+    left: 0;
+    top: 0;
+
+    .menus {
+        width: 200px;
+        background-color: #E2E2E2;
+        margin-left: 20px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+
+        a {
+            display: block;
+            line-height: 30px;
+            padding-left: 30px;
+            font-size: 14px;
+
+            &:hover {
+                background-color: white;
+                color: lightskyblue;
+                text-decoration: none;
+            }
+
+            i {
+                padding-right: 10px;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .products {
+        height: 510px;
+        background-color: white;
+        margin-left: 220px;
+        left: 0;
+        top: 0;
+        z-index: 1;
+
+        .row {
+            margin: 20px 80px 0px 80px;
+            padding-bottom: 20px;
+            border-bottom: dashed 1px #E7E7E7;
+
+            a {
+                color: #999;
+                font-size: 14px;
+                margin: 8px;
+
+                &:hover {
+                    color: #C40000;
+                }
+            }
+        }
+    }
+}
