@@ -1,5 +1,13 @@
 .category-carousel {
+    margin: 50px auto;
     position: relative;
+
+    img#catear {
+        position: absolute;
+        height: 15px;
+        display: none;
+        z-index: 100;
+    }
 
     .category {
         background-color: #DD2727;
@@ -31,10 +39,8 @@
     }
 
     .carousel {
-        position: absolute;
-        right: 0;
         height: 510px;
-        margin: 0px 0px 0px 200px;
+        margin-left: 200px;
     }
 
     .carousel-background {

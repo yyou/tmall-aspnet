@@ -12,12 +12,13 @@
 </head>
 <body>
     <div class="category-carousel">
+        <img src="img/site/catear.png" id="catear" />
+
         <div class="category">
             <a href="#nowhere" class="product-category">
                 <span class="glyphicon glyphicon-th-list" style="margin-left: 10px"></span>
                 <span style="margin-left: 10px;">商品分类</span>
             </a>            
-            
             <a href="#nowhere">
                 <span class="glyphicon glyphicon-shopping-cart"></span>
                 <span>天猫超市</span>
@@ -28,7 +29,7 @@
             </a>
             <a href="#nowhere">平板电视</a>
             <a href="#nowhere">电热水器</a>
-            
+            <a href="#nowhere">马桶</a>
         </div>
 
         <div id="carousel" class="carousel slide" data-ride="carousel">
@@ -78,6 +79,25 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
             integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
             crossorigin="anonymous">
+    </script>
+
+    <script>
+        $(function () {
+            $('.category-carousel .category a').mouseenter(function () {
+                var elem = $(this);
+                var left = elem.offset().left;
+                var top = elem.offset().top;
+                var width = elem.width();
+                var catWidth = $('img#catear').width();
+                var destLeft = left + width / 2 - catWidth / 2;
+
+                $("img#catear").css("left", destLeft).css("top", -15).fadeIn(500);
+            });
+
+            $('.category-carousel .category a').mouseleave(function () {
+                $('img#catear').hide();
+            })
+        });
     </script>
 </body>
 </html>
