@@ -1,0 +1,117 @@
+$category-height: 542px;
+
+.category-carousel {
+
+    img#catear {
+        position: absolute;
+        height: 15px;
+        display: none;
+        z-index: 100;
+    }
+
+    header {
+        background-color: #DD2727;
+
+        .product-category {
+            padding-left: 20px;
+            width: 200px;
+            height: 36px;
+            display: inline-block;
+            background-color: #C60A0A;
+            line-height: 36px;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        a {
+            font-size: 16px;
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            cursor: pointer;
+
+            .glyphicon {
+                vertical-align: central;
+                padding-right: 3px;
+            }
+        }
+    }
+
+    .wrapper {
+        position: relative;
+        height: $category-height;
+
+        .categories {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 200px;
+            z-index: 1;
+            background-color: #E2E2E2;
+
+            a {
+                display: block;
+                line-height: 30px;
+                padding-left: 30px;
+                font-size: 14px;
+
+                &:hover {
+                    background-color: white;
+                    color: lightskyblue;
+                    text-decoration: none;
+                }
+
+                i {
+                    padding-right: 10px;
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .products {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+            margin-left: 200px;
+            height: $category-height;
+            z-index: 1;
+            background-color: white;
+
+            .row {
+                margin: 20px 80px 0px 80px;
+                padding-bottom: 20px;
+                border-bottom: dashed 1px #E7E7E7;
+
+                a {
+                    color: #999;
+                    font-size: 14px;
+                    margin: 8px;
+
+                    &:hover {
+                        color: #C40000;
+                    }
+                }
+            }
+        }
+
+        .carousel {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            height: $category-height;
+            margin-left: 200px;
+        }
+    }
+
+    .carousel-background {
+        width: 100%;
+        height: $category-height;
+        background-color: #E8E8E8;
+        position: absolute;
+        top: 36px;
+        z-index: -1;
+    }
+}
