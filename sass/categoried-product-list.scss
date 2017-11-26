@@ -1,0 +1,87 @@
+﻿@import "_variables";
+
+.categoried-product-list-wrapper {
+    max-width: 1033px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.categoried-product-list {
+    .product {
+        float: left;
+        width: 217px;
+        height: 330px;
+        border: 1px solid #eee;
+        padding: 3px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+        box-sizing: content-box;
+
+        &:hover {
+            border: 4px solid $tmall-red;
+            padding: 0;
+        }
+
+        .product-image {
+            width: 100%;
+        }
+
+        .price {
+            display: block;
+            color: $tmall-red;
+            font-size: 20px;
+
+            &:before {
+                content: "￥";
+            }
+        }
+
+        .product-link {
+            display: block;
+            color: #333;
+            padding: 0 3px;
+
+            &:hover {
+                color: $tmall-red;
+                text-decoration: underline;
+            }
+        }
+
+        .tmall-link {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            text-decoration: underline;
+        }
+
+        .product-info {
+            $border-color: #EEE;
+            border-top: 1px solid $border-color;
+            padding-top: 10px;
+
+            .monthly-deal {
+                display: inline-block;
+                width: 40%;
+                border-right: 1px solid $border-color;
+
+                .monthly-deal-number {
+                    color: #BB7C5B;
+                }
+            }
+
+            .product-review {
+                display: inline-block;
+                width: 40%;
+                border-right: 1px solid $border-color;
+
+                .product-review-number {
+                    color: #3388BB;
+                }
+            }
+
+            .wangwang {
+                padding-left: 5px;
+            }
+        }
+    }
+}
