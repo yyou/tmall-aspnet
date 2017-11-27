@@ -157,4 +157,70 @@
             }
         }
     }
+
+    .details-info {
+        .tab-headers {
+            border-bottom: 1px solid #CCC;
+
+            .tab-header {
+                display: inline-block;
+                border: 1px solid #CCC;
+                border-bottom: none;
+                padding: 10px;
+            }
+        }
+
+        .details {
+            .product-parameters {
+                border: 1px solid #CCC;
+                padding: 30px;
+                margin-bottom: 15px;
+
+                .title {
+                    /*margin: 20px;
+                margin-left: 0;*/
+                    margin-bottom: 20px;
+                }
+
+                span {
+                    display: inline-block;
+                    width: 33%;
+                    padding-bottom: 15px;
+                }
+            }
+
+            .images {
+                display: inline-block;
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+
+        .reviews {            
+            margin: 15px;
+
+            .review {
+                margin: 15px;
+                border-bottom: 1px solid #CCC;
+
+                .review-details {
+                    float: left;
+                    width: 80%;
+
+                    .content {
+                        margin-bottom: 10px;
+                    }
+
+                    .date {
+                        color: #CCC;
+                    }
+                }
+
+                .user {
+                    margin-left: 85%;
+                }
+            }
+        }
+    }
 }
