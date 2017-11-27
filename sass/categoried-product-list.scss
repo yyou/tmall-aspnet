@@ -6,6 +6,39 @@
     margin-top: 50px;
 }
 
+.sorting-pricing {
+    font-size: 10px;
+
+    .sorting {
+        display: inline-block;        
+        border-collapse: collapse;
+
+        td {
+            height: 17px;
+            font-size: 12px;
+            color: #806F66;
+            border: 1px solid #ccc;
+            padding: 3px;
+        }
+    }
+
+    .pricing {
+        display: inline-block;
+        border-collapse: collapse;
+        border: 1px solid #ccc;
+
+        td {
+            border: 1px solid #ccc;
+        }
+
+        input {
+            width: 60px;
+            padding: 2px;
+            border: none;
+        }
+    }
+}
+
 .categoried-product-list {
     .product {
         float: left;
@@ -66,6 +99,10 @@
 
                 .monthly-deal-number {
                     color: #BB7C5B;
+
+                    &:after {
+                        content: "笔";
+                    }
                 }
             }
 

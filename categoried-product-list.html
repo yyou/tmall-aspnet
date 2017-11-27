@@ -13,6 +13,32 @@
 </head>
 <body>
     <div class="categoried-product-list-wrapper">
+        <div class="sorting-pricing">
+            <img src="img/category/72.jpg" />
+            <br />
+            <table class="sorting">
+                <tbody>
+                    <tr>
+                        <td><a href="#nowhere">综合<span class="glyphicon glyphicon-arrow-down"></span></a></td>
+                        <td><a href="#nowhere">人气<span class="glyphicon glyphicon-arrow-down"></span></a></td>
+                        <td><a href="#nowhere">新品<span class="glyphicon glyphicon-arrow-down"></span></a></td>
+                        <td><a href="#nowhere">销量<span class="glyphicon glyphicon-arrow-down"></span></a></td>
+                        <td><a href="#nowhere">价格<span class="glyphicon glyphicon-resize-vertical"></span></a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <!--<span class="pricing"><input type="text" placeholder="请输入" class="" /> - <input type="text" placeholder="请输入" class="" /></span>-->
+            <table class="pricing">
+                <tbody>
+                    <tr>
+                        <td><input type="number" placeholder="至少" class="" id="minPrice" /></td>
+                        <td class="">&nbsp;-&nbsp;</td>
+                        <td><input type="number" placeholder="至多" class="" id="maxPrice" /></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
         <div class="categoried-product-list">
             <div class="product">
                 <a href="#nowhere">
@@ -24,7 +50,7 @@
                 </a>
                 <a href="#nowhere" class="tmall-link">天猫专卖</a>
                 <div class="product-info">
-                    <span class="monthly-deal">月成交 <span class="monthly-deal-number">16笔</span></span>
+                    <span class="monthly-deal">月成交 <span class="monthly-deal-number">16</span></span>
                     <span class="product-review">评价<span class="product-review-number">14</span></span>
                     <span class="wangwang">
                         <a href="#nowhere" class="wangwanglink">
@@ -43,7 +69,7 @@
                     </a>
                     <a href="#nowhere" class="tmall-link">天猫专卖</a>
                     <div class="show1 product-info">
-                        <span class="monthly-deal">月成交 <span class="monthly-deal-number">49笔</span></span>
+                        <span class="monthly-deal">月成交 <span class="monthly-deal-number">49</span></span>
                         <span class="product-review">评价<span class="product-review-number">18</span></span>
                         <span class="wangwang">
                             <a href="#nowhere" class="wangwanglink">
@@ -62,7 +88,7 @@
                 </a>
                 <a href="#nowhere" class="tmall-link">天猫专卖</a>
                 <div class="show1 product-info">
-                    <span class="monthly-deal">月成交 <span class="monthly-deal-number">34笔</span></span>
+                    <span class="monthly-deal">月成交 <span class="monthly-deal-number">34</span></span>
                     <span class="product-review">评价<span class="product-review-number">16</span></span>
                     <span class="wangwang">
                         <a href="#nowhere" class="wangwanglink">
@@ -81,7 +107,7 @@
                 </a>
                 <a href="#nowhere" class="tmall-link">天猫专卖</a>
                 <div class="show1 product-info">
-                    <span class="monthly-deal">月成交 <span class="monthly-deal-number">25笔</span></span>
+                    <span class="monthly-deal">月成交 <span class="monthly-deal-number">25</span></span>
                     <span class="product-review">评价<span class="product-review-number">19</span></span>
                     <span class="wangwang">
                         <a href="#nowhere" class="wangwanglink">
@@ -100,7 +126,7 @@
                 </a>
                 <a href="#nowhere" class="tmall-link">天猫专卖</a>
                 <div class="show1 product-info">
-                    <span class="monthly-deal">月成交 <span class="monthly-deal-number">17笔</span></span>
+                    <span class="monthly-deal">月成交 <span class="monthly-deal-number">17</span></span>
                     <span class="product-review">评价<span class="product-review-number">16</span></span>
                     <span class="wangwang">
                         <a href="#nowhere" class="wangwanglink">
@@ -119,7 +145,7 @@
                 </a>
                 <a href="#nowhere" class="tmall-link">天猫专卖</a>
                 <div class="show1 product-info">
-                    <span class="monthly-deal">月成交 <span class="monthly-deal-number">5笔</span></span>
+                    <span class="monthly-deal">月成交 <span class="monthly-deal-number">5</span></span>
                     <span class="product-review">评价<span class="product-review-number">19</span></span>
                     <span class="wangwang">
                         <a href="#nowhere" class="wangwanglink">
@@ -138,7 +164,7 @@
                 </a>
                 <a href="#nowhere" class="tmall-link">天猫专卖</a>
                 <div class="show1 product-info">
-                    <span class="monthly-deal">月成交 <span class="monthly-deal-number">8笔</span></span>
+                    <span class="monthly-deal">月成交 <span class="monthly-deal-number">8</span></span>
                     <span class="product-review">评价<span class="product-review-number">19</span></span>
                     <span class="wangwang">
                         <a href="#nowhere" class="wangwanglink">
@@ -157,7 +183,7 @@
                 </a>
                 <a href="#nowhere" class="tmall-link">天猫专卖</a>
                 <div class="show1 product-info">
-                    <span class="monthly-deal">月成交 <span class="monthly-deal-number">20笔</span></span>
+                    <span class="monthly-deal">月成交 <span class="monthly-deal-number">20</span></span>
                     <span class="product-review">评价<span class="product-review-number">16</span></span>
                     <span class="wangwang">
                         <a href="#nowhere" class="wangwanglink">
@@ -177,6 +203,46 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
             integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
             crossorigin="anonymous">
+    </script>
+
+    <script>
+        $(function () {
+            var currentOptions = {};
+
+            function filterProducts(options) {
+                options = options || {};
+                if (options.minPrice === undefined || isNaN(options.minPrice) || options.minPrice < 0) {
+                    options.minPrice = 0;
+                }
+
+                if (options.maxPrice === undefined || isNaN(options.maxPrice)) {
+                    options.maxPrice = Number.MAX_VALUE;
+                }
+
+                $('.product').each(function () {
+                    var price = parseFloat($(this).find('.price').first().text());
+                    if (isNaN(price) || price < options.minPrice || price > options.maxPrice) {
+                        $(this).hide();
+                    } else {
+                        $(this).show();
+                    }
+                });                
+            }            
+
+            $('#minPrice').change(function () {
+                var minPrice = parseFloat($('#minPrice').val());
+                currentOptions.minPrice = minPrice;
+
+                filterProducts(currentOptions);                
+            });
+
+            $('#maxPrice').change(function () {
+                var maxPrice = parseInt($('#maxPrice').val());
+                currentOptions.maxPrice = maxPrice;
+
+                filterProducts(currentOptions);
+            });
+        });
     </script>
 </body>
 </html>
