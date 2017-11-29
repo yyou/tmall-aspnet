@@ -7,15 +7,20 @@
 }
 
 .shopping-cart {
+    /*align checkbox with label*/
+    input[type=checkbox] {
+        vertical-align: -2px;
+    }
     /*checkout buttons*/
     .checkout {
         background-color: #AAAAAA;
-        color: white;  
+        color: white;
         border: 0;
     }
 
     .price {
         color: $tmall-red;
+        font-weight: bold;
     }
 
     .header {
@@ -29,9 +34,41 @@
     .order-items {
         margin: 20px auto;
         padding: 30px;
-        background-color: #CCC;
-        text-align:center;
+        width: 100%;
+        background-color: white;
+        text-align: left;
+        border: 1px solid #CCC;
+        border-collapse: collapse;
 
+        td {
+            padding: 10px;
+        }
+
+        .order-item {
+            border-bottom: 1px solid #CCC;
+
+
+            .product-image {
+                width: 80px;
+                height: 80px;
+            }
+
+            .product-link {
+                vertical-align: top;
+            }
+
+            .product-gurantee {
+                vertical-align: bottom;
+            }
+
+            .price-original {
+                text-decoration: line-through;
+            }
+
+            .input-group {
+                width: 100px;
+            }
+        }
     }
 
     .footer {
@@ -50,9 +87,9 @@
             .count {
                 color: $tmall-red;
             }
-                        
-            .checkout {         
-                width:120px;
+
+            .checkout {
+                width: 120px;
                 height: 50px;
                 font-size: 20px;
             }

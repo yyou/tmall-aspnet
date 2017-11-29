@@ -9,7 +9,7 @@
           integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
           crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="style/site.css" rel="stylesheet" />    
+    <link href="style/site.css" rel="stylesheet" />
 </head>
 <body>
     <div class="shopping-cart-wrapper">
@@ -20,13 +20,94 @@
                 <a class="checkout" href="#nowhere">结 算</a>
                 <div style="clear: both" />
             </div>
-            <div class="order-items">
-                This part will be comming soon!
-            </div>
+
+            <table class="order-items">
+                <thead>
+                    <tr>
+                        <td><label><input type="checkbox" /> 全选</label></td>
+                        <td>商品信息</td>
+                        <td>单价</td>
+                        <th>数量</th>
+                        <th width="120px">金额</th>
+                        <th class="operation">操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="order-item" oiid="936">
+                        <td>
+                            <input type="checkbox" />                            
+                            <img class="product-image" src="img/product-middle/3665.jpg">
+                        </td>
+                        <td>
+                            <div class="product-info">
+                                <a class="product-link" href="#nowhere">美国iRobot扫地机器人吸尘器全自动家用智能扫地机650 天猫电器城</a>
+                                <div class="product-gurantee">
+                                    <img title="支持信用卡支付" src="img/site/creditcard.png">
+                                    <img title="消费者保障服务,承诺7天退货" src="img/site/7day.png">
+                                    <img title="消费者保障服务,承诺如实描述" src="img/site/promise.png">
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="price price-original">￥7580.0</div>
+                            <div class="price price-current">￥5306.0</div>
+                        </td>
+                        <td>
+                            <div class="input-group">                                
+                                <a href="#nowhere" class="input-group-addon" >-</a>
+                                <input value="1" autocomplete="off"  class="form-control text-right" />
+                                <a href="#nowhere" class="input-group-addon">+</a>
+                            </div>
+                        </td>
+                        <td>
+                            <span pid="365" oiid="936" class="order-item-subtotal">￥5,306.00</span>
+                        </td>
+                        <td>
+                            <a href="#nowhere" oiid="936" class="deleteOrderItem">删除</a>
+                        </td>
+                    </tr>
+                    <tr class="order-item" oiid="935">
+                        <td>
+                            <input type="checkbox" />
+                            <img class="product-image" src="img/product-middle/8510.jpg">
+                        </td>
+                        <td>
+                            <div class="product-info">
+                                <a class="product-link" href="#nowhere">阔腿裤三件套装女夏装2016新款大码雪纺时尚休闲气质棉麻九分裤潮</a>
+                                <div class="product-gurantee">
+                                    <img title="支持信用卡支付" src="img/site/creditcard.png">
+                                    <img title="消费者保障服务,承诺7天退货" src="img/site/7day.png">
+                                    <img title="消费者保障服务,承诺如实描述" src="img/site/promise.png">
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="price price-original">￥235.0</div>
+                            <div class="price price-current">￥152.75</div>
+                        </td>
+                        <td>
+                            <div class="cartProductChangeNumberDiv">
+                                <div class="input-group">
+                                    <a href="#nowhere" class="input-group-addon">-</a>
+                                    <input value="1" autocomplete="off" class="form-control text-right" />
+                                    <a href="#nowhere" class="input-group-addon">+</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <span pid="809" oiid="935" class="order-item-subtotal">
+                                ￥152.75
+                            </span>
+                        </td>
+                        <td>
+                            <a href="#nowhere" oiid="935" class="deleteOrderItem">删除</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
 
             <div class="footer">
-                <!--<span class="select-all checkbox"><label><input type="checkbox" />全选</label></span>-->
-                <span class="select-all"><img src="img/site/cartnotSelected.png" /><span>全选</span></span>
+                <span class="select-all"><label><input type="checkbox" /> 全选</label></span>                
                 <div class="summary pull-right">
                     <span>已选商品 <span class="count">0</span> 件</span>
                     <span>合计（不含运费）</span>
@@ -47,7 +128,7 @@
     </script>
 
     <script>
-        
+
     </script>
 </body>
 </html>
