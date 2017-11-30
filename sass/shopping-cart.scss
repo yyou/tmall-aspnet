@@ -13,14 +13,32 @@
     }
     /*checkout buttons*/
     .checkout {
-        background-color: #AAAAAA;
         color: white;
         border: 0;
+        cursor: pointer;
+        background-color: $tmall-red;
+
+        &:disabled {
+            background-color: #AAAAAA;
+            cursor: default;
+        }
     }
 
     .price {
         color: $tmall-red;
         font-weight: bold;
+
+        &:before {
+            content: "￥";
+        }
+    }
+
+    .subtotal {
+        @extend .price;
+    }
+
+    .total {
+        @extend .price;
     }
 
     .header {
@@ -66,7 +84,7 @@
             }
 
             .input-group {
-                width: 100px;
+                width: 150px;
             }
         }
     }
@@ -79,7 +97,7 @@
         color: black;
         text-align: left;
 
-        .select-all {
+        .select-all-wrapper {
             line-height: 50px;
         }
 
