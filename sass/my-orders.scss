@@ -1,0 +1,123 @@
+﻿@import "_variables";
+
+.my-orders-wrapper {
+    max-width: 1033px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+/*.my-orders {
+    .tab-headers {
+        
+
+        div {
+            border-bottom: 2px solid #E8E8E8;
+            float: left;
+
+            a {
+                border-right: 1px solid #E8E8E8;
+                display: inline-block;
+                font-size: 16px;
+                font-weight: bold;
+                color: black;
+                margin-bottom: 10px;
+                padding: 0px 20px;
+                text-decoration: none;
+
+                &:hover, &.active {
+                    color: $tmall-red;
+                    border-bottom: 2px solid $tmall-red;
+                }
+            }
+
+            &:last-child {
+                overflow: hidden;
+                float: none !important;
+                border-bottom: 2px solid #E8E8E8;
+                height: 35px;
+            }
+
+           
+            padding: 10px 15px;
+            font-size: 16px;
+            font-weight: bold;
+
+            &.active {
+                border-bottom: 2px solid $tmall-red;
+
+                a {
+                    color: $tmall-red;
+                }
+            }
+        }
+    }
+}*/
+
+.my-orders {
+
+    .tab-headers {
+        .tab-header {
+            border-bottom: 2px solid #E8E8E8;
+            float: left;
+
+            &.active {
+                border-bottom-color: $tmall-red;
+            }
+
+            &:hover {
+                border-bottom-color: $tmall-red;
+            }
+
+            &.last {
+                overflow: hidden;
+                float: none !important;
+                box-sizing: content-box;
+                height: 26px;
+            }
+
+            a {
+                border-right: 1px solid #AAA;
+                display: inline-block;
+                font-size: 16px;
+                line-height: 16px;
+                font-weight: bold;
+                color: black;
+                margin-bottom: 10px;
+                padding: 0px 20px;
+            }
+        }
+    }
+
+    .orders {
+        border: 1px solid #E8E8E8;
+        width: 100%;
+        margin: 20px 0px;
+        background-color: #F5F5F5;
+        text-align: center;
+        font-size: 12px;
+
+        td {
+            padding: 12px 0px;
+        }
+
+        .item {            
+            
+        }
+
+        .price {
+            width: 100px;
+        }
+
+        .quantity {
+            width: 100px;
+        }
+
+        .paid {
+            width: 120px;
+        }
+
+        .operation {
+            width: 100px;
+        }
+    }
+}
