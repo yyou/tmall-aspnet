@@ -89,19 +89,12 @@
     }
 
     .orders {
-        border: 1px solid #E8E8E8;
         width: 100%;
         margin: 20px 0px;
-        background-color: #F5F5F5;
-        text-align: center;
         font-size: 12px;
+        border-collapse: collapse;
 
-        td {
-            padding: 12px 0px;
-        }
-
-        .item {            
-            
+        .item {
         }
 
         .price {
@@ -118,6 +111,95 @@
 
         .operation {
             width: 100px;
+        }
+
+        .header {
+            border: 1px solid #E8E8E8;
+            margin-bottom: 10px;
+            background-color: #F5F5F5;
+            text-align: center;
+
+            td {
+                padding: 15px;
+            }
+        }
+
+        .order {
+            border-collapse: separate;
+            margin: 10px auto;
+
+            &:before {
+                line-height: 1em;
+                content: "_";
+                color: white;
+                display: block;
+            }
+
+            tr.first-row {
+                border: 2px solid #CCC;
+                border-bottom: none;
+                background-color: #F1F1F1;
+
+                .action {
+                    text-align: right;
+                    font-size: 16px;
+                }
+            }
+
+            tr.second-row {
+                border: 2px solid #CCC;
+                border-top: none;
+
+                .product-image {
+                    float: left;
+                    width: 80px;
+                    height: 80px;
+                }
+
+                .content {
+                    position: relative;                    
+                    height: 80px;
+                    
+                    .description {
+                        padding-left: 10px;
+                    }
+
+                    .gurantee {
+                        margin-left: 90px;
+                        position: absolute;
+                        bottom: 0px;
+                    }
+                }
+
+                .total {
+                    font-weight: bold;
+                    vertical-align: top;
+                }
+
+                .action {
+                    vertical-align: top;
+                    text-align: center;
+
+                    button {
+                        padding: 5px 10px;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            &:hover {
+                tr.first-row {
+                    border-color: #333;
+                }
+
+                tr.second-row {
+                    border-color: #333;
+                }
+            }
+
+            td {
+                padding: 10px;
+            }
         }
     }
 }
