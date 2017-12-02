@@ -27,7 +27,7 @@
 
         .address-item {
             width: 100%;
-            margin: 10px 0px 10px 50px;        
+            margin: 10px 0px 10px 50px;
 
             .address-label {
                 display: inline-block;
@@ -40,10 +40,72 @@
                 width: 200px;
             }
 
-            textarea.address-control {                
+            textarea.address-control {
                 margin-left: -3px;
                 width: 400px;
             }
+        }
+    }
+
+    .order-items {
+        width: 100%;
+        /*border-bottom: 3px solid #B2D1FF;*/
+        thead tr {
+            border-bottom: 3px solid #B2D1FF;
+        }
+
+        th, td {
+            padding: 10px;
+        }
+
+        .item {
+            border-bottom: 1px solid #CCC;
+
+            .product-image {
+                img {
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+
+            .product-link {
+                display: block;
+            }
+        }
+    }
+
+    .summary {
+        background-color: #F2F6FF;
+        padding: 20px;
+        border-top: 3px solid #B2D1FF;
+        position: relative;
+        width: 100%;
+
+        .total {
+            position: absolute;
+            right: 0px;
+        }
+    }
+
+    .paid {
+        text-align: right;
+        padding: 20px;
+
+        .price {
+            color: $tmall-red;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+
+    .submit {
+        text-align: right;
+
+        button {
+            padding: 15px 50px;
+            background-color: $tmall-red;
+            color: white;
+            font-size: 16px;
         }
     }
 }
