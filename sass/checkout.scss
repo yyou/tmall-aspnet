@@ -1,0 +1,49 @@
+﻿@import "_variables";
+
+.checkout-wrapper {
+    max-width: 1033px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.checkout {
+    header {
+        position: relative;
+        height: 50px;
+
+        .tmall-logo {
+            position: absolute;
+            left: 0px;
+        }
+
+        .check-shopping-cart {
+            position: absolute;
+            right: 0px;
+        }
+    }
+
+    .address-form {
+        width: 700px;
+
+        .address-item {
+            width: 100%;
+            margin: 10px 0px 10px 50px;        
+
+            .address-label {
+                display: inline-block;
+                width: 100px;
+                height: 100%;
+                vertical-align: top;
+            }
+
+            .address-control {
+                width: 200px;
+            }
+
+            textarea.address-control {                
+                margin-left: -3px;
+                width: 400px;
+            }
+        }
+    }
+}
