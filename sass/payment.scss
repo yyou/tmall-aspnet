@@ -1,0 +1,31 @@
+﻿@import "_variables";
+
+.payment-wrapper {
+    max-width: 1033px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.payment {
+    .details {
+        margin: auto;
+        width: 300px;
+        text-align: center;
+
+
+        .price {
+            color: $tmall-red;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .confirm-payment {
+            display: block;
+            margin: auto;
+            background-color: #00AAEE;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+        }
+    }
+}
