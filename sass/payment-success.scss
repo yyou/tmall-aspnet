@@ -1,0 +1,57 @@
+﻿@import "_variables";
+
+.payment-success-wrapper {
+    max-width: 1033px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.payment-success {
+    border: 1px solid #999;
+    header {
+        background-color: #ECFFDC;
+        padding: 20px;
+        font-weight: bold;
+    }
+
+    section {
+        border-bottom: none;
+
+        ul {
+            list-style: square;
+            margin-left: 50px;
+            margin-top: 40px;
+
+            li {
+                margin: 10px 0;
+            }
+
+            .price {
+                color: $tmall-red;
+                font-weight: bold;
+            }
+        }
+
+        p {
+            margin-left: 50px;
+
+            .checking {
+                color: #2D8CBA;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    footer {
+        margin: 0 25px;
+        padding: 20px 15px;
+        border-top: 1px solid #CCC;
+
+        .warning {
+            color: $tmall-red;
+        }
+    }
+}
