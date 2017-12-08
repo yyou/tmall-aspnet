@@ -1,7 +1,8 @@
-This is a demo project to create similar web pages in the e-Commerce website http://www.tmall.com with  html/css/js. 
-We will use jQuery and Twitter Bootstrap as well.
+This project is based on the [tmall project](https://github.com/yyou/tmall.git)
 
-NOTE: All the stuff in this repository is for study purpose ONLY.
+A ASP.NET MVC project is added and the original html files will moved to the Views folder.
+
+Again, all the stuff in this repository is for study purpose ONLY.
 
 After checking out this repository, run
 

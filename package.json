@@ -1,5 +1,5 @@
 {
-  "name": "tmall",
+  "name": "tmall-aspnet",
   "version": "1.0.0",
   "description": "This is a demo project to create similar web pages in the e-Commerce website http://www.tmall.com with  html/css/js. \r We will use jQuery and Twitter Bootstrap as well.",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yyou/tmall.git"
+    "url": "git+https://github.com/yyou/tmall-aspnet.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/yyou/tmall/issues"
+    "url": "https://github.com/yyou/tmall-aspnet/issues"
   },
-  "homepage": "https://github.com/yyou/tmall#readme",
+  "homepage": "https://github.com/yyou/tmall-aspnet#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-livereload": "^3.8.1",
