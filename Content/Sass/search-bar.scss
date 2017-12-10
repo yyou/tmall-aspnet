@@ -1,21 +1,31 @@
-.search {
+.logo-and-search {
     position: relative;
+    height: 75px;
+    background-color: #FFF;
 
-    img.logo {
-        position: absolute;
-        top: 0px;
-        margin: -30px;
-        left: 0px;
-        z-index: -1;
+    .logo {
+        /*position: absolute;*/
+        /*top: 0px;*/
+        /*margin: -10px -30px;*/
+        /*left: 0px;*/
+        /*z-index: -1;*/
+        img {
+            width: 145px;
+            height: 65px;
+            position: relative;            
+        }
     }
 
-    .searchDiv {
-        background-color: #C40000;
+    .search {
+        position: absolute;
+        top: 10px;
+        left: 155px;
         padding: 1px;
         width: 400px;
         height: 40px;
-        margin: 20px 0px 0px 250px;
         display: block;
+        background-color: #C40000;
+
 
         input {
             width: 275px;

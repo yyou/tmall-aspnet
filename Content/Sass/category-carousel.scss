@@ -1,7 +1,6 @@
-$category-height: 542px;
+@import '_variables';
 
 .category-carousel {
-
     img#catear {
         position: absolute;
         height: 15px;
@@ -37,6 +36,9 @@ $category-height: 542px;
             }
         }
     }
+
+    $category-width: 200px;
+    $category-height: 542px;
 
     .wrapper {
         position: relative;
@@ -104,14 +106,15 @@ $category-height: 542px;
             height: $category-height;
             margin-left: 200px;
         }
-    }
 
-    .carousel-background {
-        width: 100%;
-        height: $category-height;
-        background-color: #E8E8E8;
-        position: absolute;
-        top: 36px;
-        z-index: -1;
+        .carousel-background {
+            position: absolute;
+            top: 0px;
+            left: 200px;
+            width: ($site-width - $category-width);
+            height: $category-height;
+            background-color: #E8E8E8;
+            z-index: -1;
+        }
     }
 }

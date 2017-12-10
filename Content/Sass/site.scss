@@ -1,0 +1,45 @@
+$siteWidth: 960px;
+
+body {
+    width: $siteWidth;
+    margin: auto;
+}
+
+.main-page-section {
+	width: $siteWidth;
+	margin: auto;
+}
+
+.site-header {
+	@extend .main-page-section;
+}
+
+.body-content {
+	@extend .main-page-section;
+}
+
+.site-footer {
+	@extend .main-page-section;
+}
+
+.container {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+@import "reset";
+@import "nav-top";
+@import "search-bar";
+@import "category-carousel";
+@import "category-menu";
+@import "footer";
+@import "simple-search-bar";
+@import "product-list";
+@import "categoried-product-list";
+@import "product-details";
+@import "shopping-cart";
+@import "my-orders";
+@import "checkout";
+@import "payment";
+@import "payment-success";
+

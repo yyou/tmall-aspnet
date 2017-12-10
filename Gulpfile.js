@@ -1,7 +1,9 @@
+/// <binding AfterBuild='sass, concat-js' />
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var livereload = require('gulp-livereload');
 var webserver = require('gulp-webserver');
+var concat = require('gulp-concat');
 
 gulp.task('webserver', function() {
     gulp.src('./')
@@ -12,14 +14,20 @@ gulp.task('webserver', function() {
 });
 
 gulp.task('sass', function() {
-    gulp.src('sass/**/*.scss')
+    gulp.src('./Content/Sass/**/*.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./style/'))
+        .pipe(gulp.dest('./Content/'))
+});
+
+gulp.task('concat-js', function() {
+    gulp.src('./Views/**/*.js')
+	.pipe(concat('site.js'))
+	.pipe(gulp.dest('./Scripts'));
 });
 
 //Watch task
 gulp.task('watch',function() {
-    gulp.watch('sass/**/*.scss', ['sass']);
+    gulp.watch('./Content/Sass/**/*.scss', ['sass']);
     //gulp.watch('*.html', ['html']);
 });
 

@@ -3,3 +3,10 @@ style/
 bin/
 obj/
 packages/
+Content/*.css
+/.vs
+/Scripts/site.js
+/.Gulpfile.js.un~
+/package.json~
+/TMall.csproj.user
+/Gulpfile.js~
